@@ -1,0 +1,52 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #003366;
+  color: whitesmoke;
+  position: sticky;
+  top: 0;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+}
+
+nav img {
+  width: 40px;
+  height: 32px;
+}
+
+nav div {
+  visibility:hidden;
+}
+
+.page-title {
+  font-size: 1.8em;
+  text-align: center;
+  margin-top: 10px;
+  text-decoration: underline;
+  color: #003366;
+}
+
+
+article {
+  margin: 12px 15px;
+  font-size: 1.2em;
+  letter-spacing: 1.3px;
+  word-spacing: 1px;
+  line-height: 1.5;
+  justify-content: justify;
+  text-align: center;
+}

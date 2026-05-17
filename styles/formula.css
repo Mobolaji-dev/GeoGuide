@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ font-family: Arial, Helvetica, sans-serif;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: #003366;
+  color: whitesmoke;
+  position: sticky;
+  top: 0;
+}
+
+nav button {
+  background-color: transparent;
+  border: none;
+}
+
+nav img {
+  width: 40px;
+  height: 32px;
+}
+
+nav div {
+  visibility:hidden;
+}
+
+.section {
+  margin-top: 10px;
+  margin-bottom: 5px;
+  text-decoration: underline;
+  font-size: 1.5em;
+  text-align: center;
+  font-weight: 550;
+  color: #003366;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin: 20px 5%;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: 0 0 6px 0.5px rgba(0, 0, 0, 0.276);
+  background-color: rgb(234, 234, 234);
+}
+
+img {
+  border-radius: 10px;
+  max-width: 190px;
+  max-height: 170px;
+}
+
+.image-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: solid 2px white;
+  border-radius: 10px;
+  max-width: 220px;
+  max-height: 180px;
+  margin: 10px;
+}
+
+.shape-name {
+  font-size: 1.5em; 
+  margin: 5px;
+  text-align: center;
+}
+
+.formula {
+  font-size: 1.3em;
+  margin: 8px;
+  border-radius: 10px;
+  background-color: rgba(216, 214, 214, 0.792);
+  padding: 25px;
+  box-shadow: 0 0 6px 0.5px rgba(166, 166, 166, 0.276);
+  text-align: center;
+}
+
+section {
+  scroll-margin-top: 75px;
+}
+
