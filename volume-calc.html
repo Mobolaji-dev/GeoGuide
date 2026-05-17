@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoGuide | Volume Calculator</title>
+  <link rel="stylesheet" href="styles/volume-calc.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+  <nav>
+		<button id="menu-btn"><img src="images/ei_1778978964709-removebg-preview.webp" alt="menu icon"></button>
+    <h2>GeoGuide Calculator</h2>
+		<div>hello</div>
+  </nav>
+	
+	<div class="overlay" id="overlay"></div>
+	<aside class="sidebar" id="sidebar">
+		<h2>GeoGuide</h2>
+		<ul class="nav-links">
+      <li><a href="formula.html">Formulas</a></li>
+			<li><a href="formula.html#perimeter">Perimeter Formula</a></li>
+			<li><a href="formula.html#area">Area Formula</a></li>
+			<li><a href="formula.html#volume">Volume Formula</a></li>
+			<li><a href="formula.html#circle">Circle Formula</a></li>
+			<li  class="active"><a href="calculator.html">Calculator</a></li>
+			<li><a href="about.html">About</a></li>
+
+		</ul>
+	</aside>
+
+  <p class="warning">NOTE: Always clear the field you want to calculate for.</p>
+
+  <p class="page-title">Volume Calculator</p>
+
+  <div class="shape-selector-container">
+    <select name="shape" id="shape-selector" class="shape-selector">
+      <option class="option" value="select">Select a shape</option>
+      <option class="option" value="cube">Cube</option>
+      <option class="option" value="cuboid">Cuboid</option>
+      <option class="option" value="cylinder">Cylinder</option>
+      <option class="option" value="cone">Cone</option>
+      <option class="option" value="sphere">Sphere</option>
+    </select>
+  </div>
+
+
+  <main id="main-view">
+    <!--Cube Volume-->
+    <section id="cube-volume">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/cube.webp" alt="cube"  >
+        </div>
+        <p class="shape-name">CUBE</p>
+        <p class="formula">Side<span>&sup3;</span></p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Side:</p>
+              <input type="text"   class="value-field js-cube-side">
+            </div>
+            <div class="input-group">
+              <p>Volume:</p>
+              <input type="text" class="value-field js-cube-volume">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-cube-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Cuboid Volume-->
+    <section id="cuboid-volume">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/cuboid.webp" alt="cuboid"  >
+        </div>
+        <p class="shape-name">CUBOID</p>
+        <p class="formula">Length <span>&times;</span> Width <span>&times;</span> Height</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Length:</p>
+              <input type="text"   class="value-field js-cuboid-length">
+            </div>
+            <div class="input-group">
+              <p>Width:</p>
+              <input type="text"   class="value-field js-cuboid-width">
+            </div>
+            <div class="input-group">
+              <p>Height:</p>
+              <input type="text"   class="value-field js-cuboid-height">
+            </div>
+            <div class="input-group">
+              <p>Volume:</p>
+              <input type="text" class="value-field js-cuboid-volume">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-cuboid-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Cylinder Volume-->
+    <section id="cylinder-volume">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/cylinder.webp" alt="cylinder"  >
+        </div>
+        <p class="shape-name">CYLINDER</p>
+        <p class="formula">&pi;r<span>&sup2;</span>h</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Radius (r):</p>
+              <input type="text"   class="value-field js-cylinder-radius">
+            </div>
+            <div class="input-group">
+              <p>Height (h):</p>
+              <input type="text"   class="value-field js-cylinder-height">
+            </div>
+            <div class="input-group">
+              <p>Volume:</p>
+              <input type="text" class="value-field js-cylinder-volume">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-cylinder-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Cone Volume-->
+    <section id="cone-volume">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/cone.webp" alt="cone"  >
+        </div>
+        <p class="shape-name">CONE</p>
+        <p class="formula">1/3&pi;r<span>&sup2;</span>h</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Radius (r):</p>
+              <input type="text"   class="value-field js-cone-radius">
+            </div>
+            <div class="input-group">
+              <p>Height (h):</p>
+              <input type="text"   class="value-field js-cone-height">
+            </div>
+            <div class="input-group">
+              <p>Volume:</p>
+              <input type="text" class="value-field js-cone-volume">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-cone-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Sphere Volume-->
+    <section id="sphere-volume">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/sphere.webp" alt="sphere"  >
+        </div>
+        <p class="shape-name">SPHERE</p>
+        <p class="formula">4/3 <span>&times;</span> &pi; <span>&times;</span> Radius<span>&sup3;</span></p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Radius (r):</p>
+              <input type="text"   class="value-field js-sphere-radius">
+            </div>
+            <div class="input-group">
+              <p>Volume:</p>
+              <input type="text" class="value-field js-sphere-volume">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-sphere-vol-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+  </main>  
+
+  <script type="module" src="scripts/volume-calc.js"></script>
+  <script type="module" src="scripts/v-selection.js"></script>
+  <script src="scripts/sidebar.js"></script>
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoGuide | 2D Area Calcuator</title>
+  <link rel="stylesheet" href="styles/area-calc.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+  <nav>
+		<button id="menu-btn"><img src="images/ei_1778978964709-removebg-preview.webp" alt="menu icon"></button>
+    <h2>GeoGuide Calculator</h2>
+		<div>hello</div>
+  </nav>
+	
+	<div class="overlay" id="overlay"></div>
+	<aside class="sidebar" id="sidebar">
+		<h2>GeoGuide</h2>
+		<ul class="nav-links">
+      <li><a href="formula.html">Formulas</a></li>
+			<li><a href="formula.html#perimeter">Perimeter Formula</a></li>
+			<li><a href="formula.html#area">Area Formula</a></li>
+			<li><a href="formula.html#volume">Volume Formula</a></li>
+			<li><a href="formula.html#circle">Circle Formula</a></li>
+			<li  class="active"><a href="calculator.html">Calculator</a></li>
+			<li><a href="about.html">About</a></li>
+
+		</ul>
+	</aside>
+
+  <p class="warning">NOTE: Always clear the field you want to calculate for.</p>
+
+  <p class="page-title">2D Area Calculator</p>
+
+  <div class="shape-selector-container">
+    <select name="shape" id="shape-selector" class="shape-selector">
+      <option class="option" value="select">Select a shape</option>
+      <option class="option" value="triangle">Triangle</option>
+      <option class="option" value="square">Square</option>
+      <option class="option" value="rectangle">Rectangle</option>
+      <option class="option" value="circle">Circle</option>
+      <option class="option" value="trapezoid">Trapezoid</option>
+      <option class="option" value="parallelogram">Parallelogram</option>
+    </select>
+  </div>
+
+  <main id="main-view">
+    <!--Triangle-->
+    <section id="triangle-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/triangle.webp" alt="triangle"  >
+        </div>
+        <p class="shape-name">TRIANGLE</p>
+        <p class="formula">1/2 <span>&times;</span> Base <span>&times;</span> Height</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Base:</p>
+              <input type="text"   class="value-field js-triangle-base">
+            </div>
+            <div class="input-group">
+              <p>Height:</p>
+              <input type="text" class="value-field js-triangle-height">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-triangle-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-triangle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </div>
+      </form>
+    </section>
+
+    <!--Square-->
+    <section id="square-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/square.webp" alt="square"  >
+        </div>
+        <p class="shape-name">SQUARE</p>
+        <p class="formula">Length <span>&times;</span> Length </p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Length:</p>
+              <input type="text"   class="value-field js-square-length">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-square-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-square-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </div>
+      </form>
+    </section>
+
+
+    <!--Rectangle-->
+    <section id="rectangle-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/rectangle.webp" alt="rectangle"  >
+        </div>
+        <p class="shape-name">RECTANGLE</p>
+        <p class="formula">Length <span>&times;</span> Width </p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Length:</p>
+              <input type="text"   class="value-field js-rectangle-length">
+            </div>
+            <div class="input-group">
+              <p>Width:</p>
+              <input type="text"   class="value-field js-rectangle-width">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-rectangle-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-rectangle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Circle-->
+    <section id="circle-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/circle.webp" alt="circle"  >
+        </div>
+        <p class="shape-name">CIRCLE</p>
+        <p class="formula">&pi; <span>&times;</span> Radius<span>&sup2;</span></p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Radius:</p>
+              <input type="text"   class="value-field js-circle-radius">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-circle-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-circle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+  <!--Trapezoid-->
+    <section id="trapezoid-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/trapezium.webp" alt="trapezoid"  >
+        </div>
+        <p class="shape-name">TRAPEZOID</p>
+        <p class="formula">1/2 <span>&times;</span> (Base A + Base B) <span>&times;</span> Height</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Base A:</p>
+              <input type="text"   class="value-field js-trapezoid-base-a">
+            </div>
+            <div class="input-group">
+              <p>Base B:</p>
+              <input type="text"   class="value-field js-trapezoid-base-b">
+            </div>
+            <div class="input-group">
+              <p>Height:</p>
+              <input type="text"   class="value-field js-trapezoid-height">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-trapezoid-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-trapezoid-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+  <!--Parallelogram-->
+  <section id="parallelogram-area-calculator">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/parallelogram.webp" alt="parallelogram"  >
+        </div>
+        <p class="shape-name">PARALLELOGRAM</p>
+        <p class="formula">Base <span>&times;</span> Height</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Base:</p>
+              <input type="text"   class="value-field js-parallelogram-base">
+            </div>
+            <div class="input-group">
+              <p>Height:</p>
+              <input type="text"   class="value-field js-parallelogram-height">
+            </div>
+            <div class="input-group">
+              <p>Area:</p>
+              <input type="text" class="value-field js-parallelogram-area">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-parallelogram-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+  
+  <script type="module" src="scripts/2d-selection.js"></script>  
+  <script type="module" src="scripts/area-calc.js"></script>
+  <script src="scripts/sidebar.js"></script>
+  
+</body>
+</html>

@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GeoGuide | Perimeter Calculator</title>
+  <link rel="stylesheet" href="styles/perimter-calc.css">
+  <link rel="stylesheet" href="styles/sidebar.css">
+</head>
+<body>
+  <nav>
+		<button id="menu-btn"><img src="images/ei_1778978964709-removebg-preview.webp" alt="menu icon"></button>
+    <h2>GeoGuide Calculator</h2>
+		<div>hello</div>
+  </nav>
+	
+	<div class="overlay" id="overlay"></div>
+	<aside class="sidebar" id="sidebar">
+		<h2>GeoGuide</h2>
+		<ul class="nav-links">
+      <li><a href="formula.html">Formulas</a></li>
+			<li><a href="formula.html#perimeter">Perimeter Formula</a></li>
+			<li><a href="formula.html#area">Area Formula</a></li>
+			<li><a href="formula.html#volume">Volume Formula</a></li>
+			<li><a href="formula.html#circle">Circle Formula</a></li>
+			<li  class="active"><a href="calculator.html">Calculator</a></li>
+			<li><a href="about.html">About</a></li>
+
+		</ul>
+	</aside>
+
+  <p class="warning">NOTE: Always clear the field you want to calculate for.</p>
+
+  <p class="page-title">Perimeter Calculator</p>
+
+  <div class="shape-selector-container">
+    <select name="shape" id="shape-selector" class="shape-selector">
+      <option class="option" value="select">Select a shape</option>
+      <option class="option" value="triangle">Triangle</option>
+      <option class="option" value="square">Square</option>
+      <option class="option" value="rectangle">Rectangle</option>
+      <option class="option" value="circle">Circle</option>
+      <option class="option" value="parallelogram">Parallelogram</option>
+      <option class="option" value="polygon">Regular Polygon</option>
+    </select>
+  </div>
+
+
+  <main id="main-view">
+    <!--Triangle-->
+    <section id="triangle-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/triangle.webp" alt="triangle"  >
+        </div>
+        <p class="shape-name">TRIANGLE</p>
+        <p class="formula">Side A + Side B + Side C</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Side A:</p>
+              <input type="text"   class="value-field js-triangle-side-a">
+            </div>
+            <div class="input-group">
+              <p>Side B:</p>
+              <input type="text"   class="value-field js-triangle-side-b">
+            </div>
+            <div class="input-group">
+              <p>Side C:</p>
+              <input type="text"   class="value-field js-triangle-side-c">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-triangle-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-triangle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Square Perimeter-->
+    <section id="square-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/square.webp" alt="square"  >
+        </div>
+        <p class="shape-name">SQUARE</p>
+        <p class="formula">4 <span>&times;</span> Side</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Side:</p>
+              <input type="text"   class="value-field js-square-side">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-square-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-square-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Rectangle Perimeter-->
+    <section id="rectangle-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/rectangle.webp" alt="rectangle"  >
+        </div>
+        <p class="shape-name">RECTANGLE</p>
+        <p class="formula">2 <span>&times;</span> (Length + Width)</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Length:</p>
+              <input type="text"   class="value-field js-rectangle-length">
+            </div>
+            <div class="input-group">
+              <p>Width:</p>
+              <input type="text"   class="value-field js-rectangle-width">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-rectangle-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-rectangle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Circle Perimeter-->
+    <section id="circle-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/circle.webp" alt="circle"  >
+        </div>
+        <p class="shape-name">CIRCLE</p>
+        <p class="formula">2 <span>&times;</span> &pi; <span>&times;</span> Radius</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Radius:</p>
+              <input type="text"   class="value-field js-circle-radius">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-circle-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-circle-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Parallelogram Perimeter-->
+    <section id="parallelogram-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/parallelogram.webp" alt="parallelogram"  >
+        </div>
+        <p class="shape-name">PARALLELOGRAM</p>
+        <p class="formula">2 <span>&times;</span> (Base + Side)</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Base:</p>
+              <input type="text"   class="value-field js-parallelogram-base">
+            </div>
+            <div class="input-group">
+              <p>Side:</p>
+              <input type="text"   class="value-field js-parallelogram-side">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-parallelogram-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-parallelogram-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+
+    <!--Regular Polygon Perimeter-->
+    <section id="polygon-perimeter">
+      <div class="container">
+        <div class="image-container">
+          <img src="images/polygon.webp" alt="polygon"  >
+        </div>
+        <p class="shape-name">REGULAR POLYGON</p>
+        <p class="formula">Number of Sides <span>&times;</span> Side Length</p>
+        
+        <form action="">
+          <div class="input-container">
+            <div class="input-group">
+              <p>Number of Sides (n):</p>
+              <input type="text"   class="value-field js-polygon-sides">
+            </div>
+            <div class="input-group">
+              <p>Side Length (s):</p>
+              <input type="text"   class="value-field js-polygon-length">
+            </div>
+            <div class="input-group">
+              <p>Perimeter:</p>
+              <input type="text" class="value-field js-polygon-perimeter">
+            </div>
+            <div class="button-group">
+              <button type="button" class="calc-button js-polygon-button">CALCULATE</button>
+              <button type="reset" class="clear-button">CLEAR</button>
+            </div>
+          </div>
+        
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <script type="module" src="scripts/perimeter-calc.js"></script>
+  <script type="module" src="scripts/p-selection.js"></script>  
+  <script src="scripts/sidebar.js"></script>
+</body>
+</html>
