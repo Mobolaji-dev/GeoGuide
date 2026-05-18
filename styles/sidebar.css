@@ -35,30 +35,37 @@
   font-size: 2em;
   margin-bottom: 30px;
   border-radius: 10px;
-  background-color: #3d98ffc0;
+  background-color: #01458879;
+  text-decoration: none;
   text-align: center;
-  padding: 10px 0; 
+  padding: 8px 0; 
 }
 
 .nav-links {
-  background-color: rgba(233, 233, 233, 0.066);
   border-radius: 10px;
-  padding: 5px 3px;
+  padding: 0 10px;
+  border: solid 1.5px rgba(6, 37, 83, 0.651);
 }
+
 .nav-links li {
-  padding: 12px 0;
+  padding: 8px 0px;
   list-style: none;
-  margin: 20px 0;
+  margin: 15px 0;
   border-radius: 10px;
 }
 
 .nav-links a {
   text-decoration: none;
-  padding: 20px ;
+  padding: 10px 10px ;
   color: white;
   font-size: 1.5em;
+  border-radius: 10px;
 }
 
 .active {
-  background-color: #ffffff5d;
+    background-color: rgba(233, 233, 233, 0.066);
+}
+
+.nav-links a:hover {
+  background-color: #004284;
 }
